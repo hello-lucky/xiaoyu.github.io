@@ -10,20 +10,15 @@ canonifyURLs = false
 # 菜单
 [menu]
   [[menu.main]]
-    identifier = "home"
-    name = "首页"
-    url = "/"
-    weight = 1
-  [[menu.main]]
     identifier = "posts"
     name = "文章"
     url = "/posts/"
-    weight = 2
+    weight = 1
   [[menu.main]]
     identifier = "tags"
     name = "标签"
     url = "/tags/"
-    weight = 3
+    weight = 2
 
 # 主题参数
 [params]
