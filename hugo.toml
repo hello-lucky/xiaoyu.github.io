@@ -1,0 +1,29 @@
+baseURL = "http://localhost:1313/"
+languageCode = "zh-cn"
+title = "Good Luck"
+theme = "PaperMod"
+
+[pagination]
+pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+
+[params]
+  description = "我的博客"
+  author = "xiaoyu"
+  defaultTheme = "auto"
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  ShowToc = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
