@@ -3,21 +3,29 @@ languageCode = "zh-cn"
 title = "Good Luck"
 theme = "PaperMod"
 
-[pagination]
-pagerSize = 10
+# URL 配置
+relativeURLs = false
+canonifyURLs = false
 
+# 菜单
 [menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
   [[menu.main]]
     identifier = "posts"
     name = "文章"
     url = "/posts/"
-    weight = 10
+    weight = 2
   [[menu.main]]
     identifier = "tags"
     name = "标签"
     url = "/tags/"
-    weight = 20
+    weight = 3
 
+# 主题参数
 [params]
   description = "我的博客"
   author = "xiaoyu"
@@ -25,5 +33,8 @@ pagerSize = 10
   ShowCodeCopyButtons = true
   ShowReadingTime = true
   ShowToc = true
-  ShowBreadCrumbs = true
-  ShowPostNavLinks = true
+
+
+# 输出配置
+[outputs]
+  home = ["HTML", "RSS"]
